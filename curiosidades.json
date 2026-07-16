@@ -1,362 +1,202 @@
 [
   {
-    "titulo": "EL TEIDE ES LA MONTAÑA MÁS ALTA DE ESPAÑA",
-    "isla": "Tenerife",
-    "texto": "Con 3.715 metros sobre el nivel del mar, el Teide no solo es el pico más alto de España, sino también el tercer volcán más grande del mundo medido desde su base oceánica.",
-    "cierre": "Si subes en teleférico, en un día despejado puedes ver las otras islas a tus pies.",
-    "hashtags": "#SabíasQueCanarias #Tenerife #Teide #NaturalezaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "Teide volcano Tenerife",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL SILBO GOMERO ES PATRIMONIO DE LA HUMANIDAD",
-    "isla": "La Gomera",
-    "texto": "Los antiguos habitantes de La Gomera desarrollaron un lenguaje silbado para comunicarse a través de los barrancos, capaz de oírse a varios kilómetros de distancia.",
-    "cierre": "Hoy en día se sigue enseñando en los colegios de la isla para que no se pierda.",
-    "hashtags": "#SabíasQueCanarias #LaGomera #SilboGomero #CulturaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "La Gomera island mountains",
-      "La Gomera Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LA GRACIOSA ES LA OCTAVA ISLA CANARIA",
-    "isla": "La Graciosa",
-    "texto": "Durante años fue considerada un islote, pero en 2018 fue reconocida oficialmente como la octava isla del archipiélago. Sus calles siguen siendo de arena.",
-    "cierre": "Es uno de los pocos lugares de Europa donde los coches casi no existen.",
-    "hashtags": "#SabíasQueCanarias #LaGraciosa #Lanzarote #IslasCanarias #DescubreCanarias",
-    "busquedas_imagen": [
-      "La Graciosa island beach",
-      "La Graciosa Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "TIMANFAYA NACIÓ DE UNA ERUPCIÓN DE 6 AÑOS",
-    "isla": "Lanzarote",
-    "texto": "Entre 1730 y 1736, una serie de erupciones volcánicas transformó una cuarta parte de Lanzarote, sepultando varios pueblos y creando el paisaje lunar que hoy vemos.",
-    "cierre": "A pocos centímetros bajo tierra, la temperatura sigue superando los 100°C.",
-    "hashtags": "#SabíasQueCanarias #Lanzarote #Timanfaya #Volcanes #DescubreCanarias",
-    "busquedas_imagen": [
-      "Timanfaya National Park Lanzarote",
-      "Lanzarote Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL DRAGO MILENARIO PUEDE TENER MÁS DE 1.000 AÑOS",
-    "isla": "Tenerife",
-    "texto": "En Icod de los Vinos crece uno de los dragos más antiguos y grandes conocidos. Su savia roja hizo que los antiguos guanches lo consideraran un árbol sagrado.",
-    "cierre": "Nadie sabe con certeza su edad exacta, porque estos árboles no generan anillos de crecimiento.",
-    "hashtags": "#SabíasQueCanarias #Tenerife #DragoMilenario #IcodDeLosVinos #DescubreCanarias",
-    "busquedas_imagen": [
-      "Drago tree Icod de los Vinos",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LOS GUANCHES MOMIFICABAN A SUS MUERTOS",
-    "isla": "Tenerife",
-    "texto": "Los antiguos habitantes de Tenerife practicaban la momificación de forma similar a otras culturas antiguas, usando plantas y grasas para conservar los cuerpos.",
-    "cierre": "Varias de estas momias guanches se conservan hoy en el Museo de la Naturaleza y el Hombre.",
-    "hashtags": "#SabíasQueCanarias #Guanches #Tenerife #HistoriaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "guanche mummy museum Tenerife",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "GARAJONAY CONSERVA UN BOSQUE DE HACE MILLONES DE AÑOS",
-    "isla": "La Gomera",
-    "texto": "El Parque Nacional de Garajonay protege uno de los últimos bosques de laurisilva que cubrían Europa y el norte de África antes de la última glaciación.",
-    "cierre": "Caminar por su niebla permanente es casi como viajar a la prehistoria.",
-    "hashtags": "#SabíasQueCanarias #LaGomera #Garajonay #Laurisilva #DescubreCanarias",
-    "busquedas_imagen": [
-      "Garajonay National Park laurel forest",
-      "La Gomera Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LAS DUNAS DE MASPALOMAS SE MUEVEN CADA AÑO",
-    "isla": "Gran Canaria",
-    "texto": "El viento va desplazando poco a poco esta reserva natural de dunas, un ecosistema único en Europa que cambia de forma constante.",
-    "cierre": "En su interior hay un oasis con palmeras y una charca donde anidan aves migratorias.",
-    "hashtags": "#SabíasQueCanarias #GranCanaria #Maspalomas #Dunas #DescubreCanarias",
-    "busquedas_imagen": [
-      "Maspalomas dunes Gran Canaria",
-      "Gran Canaria Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL ROQUE NUBLO ERA UN LUGAR SAGRADO GUANCHE",
-    "isla": "Gran Canaria",
-    "texto": "Este monolito de 80 metros de altura era un sitio de culto para los antiguos canarios, que realizaban aquí ceremonias religiosas dedicadas a sus dioses.",
-    "cierre": "Desde su base se puede ver el Teide al otro lado del Atlántico en días despejados.",
-    "hashtags": "#SabíasQueCanarias #GranCanaria #RoqueNublo #DescubreCanarias",
-    "busquedas_imagen": [
-      "Roque Nublo Gran Canaria",
-      "Gran Canaria Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL HIERRO QUIERE FUNCIONAR SOLO CON ENERGÍAS RENOVABLES",
+    "titulo": "EL HIERRO FUE EL 'KILÓMETRO CERO' DEL MUNDO DURANTE SIGLOS",
     "isla": "El Hierro",
-    "texto": "Esta pequeña isla fue pionera al combinar energía eólica e hidráulica para intentar cubrir todo su consumo eléctrico sin depender de combustibles fósiles.",
-    "cierre": "También fue declarada Reserva de la Biosfera por la UNESCO en 2000.",
-    "hashtags": "#SabíasQueCanarias #ElHierro #EnergíaRenovable #DescubreCanarias",
-    "busquedas_imagen": [
-      "El Hierro island Canary Islands",
-      "El Hierro Canary Islands nature"
-    ],
-    "imagen_fija": null
+    "texto": "Desde el siglo II, el geógrafo griego Ptolomeo situó en Punta de Orchilla, en El Hierro, el meridiano cero del mundo conocido. Cardenales, reyes y navegantes lo respetaron como referencia durante más de 1.700 años.",
+    "cierre": "No fue hasta 1884, en una conferencia internacional en Washington, cuando se decidió trasladar el meridiano cero a Greenwich.",
+    "hashtags": "#SabíasQueCanarias #ElHierro #Historia #DescubreCanarias",
+    "fuente": "Wikipedia (Meridiano de El Hierro) / Instituto de Astrofísica de Canarias"
   },
   {
-    "titulo": "LA PALMA TIENE UNO DE LOS CIELOS MÁS LIMPIOS DEL MUNDO",
+    "titulo": "UN ALMIRANTE BRITÁNICO PERDIÓ SU BRAZO EN TENERIFE",
+    "isla": "Tenerife",
+    "texto": "En 1797, Horacio Nelson, el marino más célebre de la Armada británica, intentó tomar Santa Cruz de Tenerife con varios navíos de guerra. Las milicias canarias lo repelieron, y un disparo de cañón le destrozó el brazo derecho, que tuvo que serle amputado.",
+    "cierre": "Nelson escribió su primera carta con la mano izquierda para agradecer el trato humanitario que recibieron sus heridos por parte de los canarios.",
+    "hashtags": "#SabíasQueCanarias #Tenerife #SantaCruzDeTenerife #Historia #DescubreCanarias",
+    "fuente": "National Geographic Historia / Wikipedia (Batalla de Santa Cruz de Tenerife 1797)"
+  },
+  {
+    "titulo": "UN LAGARTO GIGANTE RESUCITÓ DESPUÉS DE 40 AÑOS DADO POR EXTINTO",
+    "isla": "El Hierro",
+    "texto": "El lagarto gigante de El Hierro se consideró extinguido desde los años 30, tras la desaparición de su última población conocida en un islote. En 1975 un grupo de investigadores encontró, por sorpresa, una población superviviente escondida en un risco casi inaccesible de la isla.",
+    "cierre": "Hoy se cría en un centro de recuperación para devolverlo poco a poco a su hábitat original.",
+    "hashtags": "#SabíasQueCanarias #ElHierro #NaturalezaCanaria #DescubreCanarias",
+    "fuente": "Gobierno de Canarias, Consejería de Medio Ambiente (Plan de especies amenazadas)"
+  },
+  {
+    "titulo": "LA PALMA APROBÓ LA PRIMERA LEY DEL MUNDO PARA PROTEGER EL CIELO NOCTURNO",
     "isla": "La Palma",
-    "texto": "El Observatorio del Roque de los Muchachos es uno de los mejores lugares del planeta para observar las estrellas, gracias a su altitud y a la ausencia de contaminación lumínica.",
-    "cierre": "Toda la isla está declarada Reserva Starlight para proteger la calidad de su cielo nocturno.",
+    "texto": "En 1988, España aprobó la Ley del Cielo, la primera normativa del planeta diseñada para proteger un observatorio de la contaminación lumínica, del tráfico aéreo y de las interferencias de radio.",
+    "cierre": "Gracias a ella, el Observatorio del Roque de los Muchachos sigue siendo hoy uno de los mejores lugares del mundo para observar las estrellas.",
     "hashtags": "#SabíasQueCanarias #LaPalma #Astroturismo #DescubreCanarias",
-    "busquedas_imagen": [
-      "Roque de los Muchachos observatory stars",
-      "La Palma Canary Islands nature"
-    ],
-    "imagen_fija": null
+    "fuente": "Instituto de Astrofísica de Canarias (IAC)"
   },
   {
-    "titulo": "LA CALDERA DE TABURIENTE PARECE UN CRÁTER, PERO NO LO ES",
+    "titulo": "UNAS PIRÁMIDES DE TENERIFE FASCINARON AL EXPLORADOR DEL KON-TIKI",
+    "isla": "Tenerife",
+    "texto": "En Güímar hay seis construcciones escalonadas de piedra que en 1991 atrajeron la atención de Thor Heyerdahl, el famoso explorador noruego que cruzó el Pacífico en una balsa. Los arqueólogos creen que son terrazas agrícolas del siglo XIX, pero sus escaleras están orientadas con precisión hacia la salida del sol en los solsticios.",
+    "cierre": "Heyerdahl se instaló en Tenerife para estudiarlas hasta el final de su vida.",
+    "hashtags": "#SabíasQueCanarias #Tenerife #Güímar #Historia #DescubreCanarias",
+    "fuente": "Wikipedia (Pirámides de Güímar) / Parque Etnográfico Pirámides de Güímar"
+  },
+  {
+    "titulo": "EL HOTEL MÁS PEQUEÑO DEL MUNDO ESTUVO EN CANARIAS",
+    "isla": "El Hierro",
+    "texto": "El Hotel Punta Grande, en el municipio herreño de Frontera, tiene solo cuatro habitaciones y apenas 600 metros cuadrados construidos sobre un acantilado. Durante años figuró en el Libro Guinness de los Récords como el hotel más pequeño del mundo.",
+    "cierre": "Le quitó el título, décadas después, un hotel de Copenhague.",
+    "hashtags": "#SabíasQueCanarias #ElHierro #DescubreCanarias",
+    "fuente": "Canarias7 / Libro Guinness de los Récords"
+  },
+  {
+    "titulo": "UNA CIUDAD CANARIA SE ILUMINÓ CON ELECTRICIDAD EN PLENO SIGLO XIX",
     "isla": "La Palma",
-    "texto": "Este circo natural de 8 kilómetros de diámetro no se formó por una explosión volcánica, sino por un proceso de erosión y desprendimientos a lo largo de miles de años.",
-    "cierre": "En su interior nace uno de los pocos ríos permanentes de Canarias.",
-    "hashtags": "#SabíasQueCanarias #LaPalma #CalderaDeTaburiente #DescubreCanarias",
-    "busquedas_imagen": [
-      "Caldera de Taburiente La Palma",
-      "La Palma Canary Islands nature"
-    ],
-    "imagen_fija": null
+    "texto": "La Nochevieja de 1893, Santa Cruz de La Palma se convirtió en la primera ciudad de Canarias con alumbrado eléctrico permanente. La luz llegó gracias a una central hidroeléctrica pionera, construida por iniciativa de un grupo de comerciantes de la ciudad.",
+    "cierre": "Aquella central, conocida como El Electrón, siguió funcionando hasta 1949 y hoy es un bien patrimonial protegido.",
+    "hashtags": "#SabíasQueCanarias #LaPalma #Historia #DescubreCanarias",
+    "fuente": "El Diario (Canarias Ahora) / Ayuntamiento de Santa Cruz de La Palma"
   },
   {
-    "titulo": "EL GOFIO ERA EL ALIMENTO BÁSICO DE LOS GUANCHES",
+    "titulo": "EL TEIDE PROYECTA LA SOMBRA MÁS GRANDE DEL MUNDO SOBRE EL MAR",
+    "isla": "Tenerife",
+    "texto": "Al amanecer y al atardecer, la silueta del Teide se proyecta sobre el océano formando un triángulo perfecto que se extiende decenas de kilómetros, alcanzando a veces hasta La Gomera o Gran Canaria.",
+    "cierre": "El fenómeno intriga tanto que ha llegado a llamar la atención de la propia NASA por su geometría.",
+    "hashtags": "#SabíasQueCanarias #Tenerife #Teide #DescubreCanarias",
+    "fuente": "Volcano Teide (concesionaria oficial del teleférico) / Diario de Avisos"
+  },
+  {
+    "titulo": "CADA ISLA CANARIA TIENE UNA EDAD GEOLÓGICA DISTINTA",
     "isla": "Canarias",
-    "texto": "Esta harina tostada de cereales, normalmente millo o trigo, era la base de la alimentación de los antiguos canarios mucho antes de la llegada de los europeos.",
-    "cierre": "Hoy sigue siendo un ingrediente muy presente en la cocina canaria, desde postres hasta guisos.",
-    "hashtags": "#SabíasQueCanarias #GofioCanario #GastronomíaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "gofio Canarian food",
-      "Canary Islands culture tradition"
-    ],
-    "imagen_fija": null
+    "texto": "El archipiélago no nació de golpe: Fuerteventura, la más antigua, empezó a formarse hace unos 26 millones de años, mientras que El Hierro, la más joven, apenas tiene un millón de años. Las islas fueron surgiendo de este a oeste según se desplazaba la placa africana sobre un punto caliente del manto terrestre.",
+    "cierre": "Por eso las islas orientales son más llanas y erosionadas, y las occidentales conservan relieves mucho más abruptos.",
+    "hashtags": "#SabíasQueCanarias #Geología #IslasCanarias #DescubreCanarias",
+    "fuente": "HD Hotels (recopilación de estudios geológicos) / Instituto Geológico y Minero de España"
   },
   {
-    "titulo": "LAS PAPAS ARRUGADAS SE COCINAN CON AGUA DE MAR",
-    "isla": "Canarias",
-    "texto": "La receta tradicional utiliza pequeñas patatas autóctonas cocidas con mucha sal, tradicionalmente agua de mar, para conseguir esa piel arrugada tan característica.",
-    "cierre": "Se sirven siempre acompañadas de mojo rojo o mojo verde.",
-    "hashtags": "#SabíasQueCanarias #PapasArrugadas #GastronomíaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "papas arrugadas mojo Canarias",
-      "Canary Islands culture tradition"
-    ],
-    "imagen_fija": null
+    "titulo": "EL VOLCÁN MÁS JOVEN DE CANARIAS NACIÓ EN 2021",
+    "isla": "La Palma",
+    "texto": "El volcán de Tajogaite, surgido durante la erupción de Cumbre Vieja, estuvo activo 85 días, entre septiembre y diciembre de 2021, y generó más de 9.000 terremotos registrados.",
+    "cierre": "Es, a día de hoy, el volcán más joven de todo el archipiélago canario.",
+    "hashtags": "#SabíasQueCanarias #LaPalma #Tajogaite #DescubreCanarias",
+    "fuente": "Instituto Volcanológico de Canarias (INVOLCAN) / Gobierno de Canarias"
   },
   {
-    "titulo": "EL TIMPLE ES UN INSTRUMENTO EXCLUSIVO DE CANARIAS",
-    "isla": "Canarias",
-    "texto": "Esta pequeña guitarra de cinco cuerdas nació en el archipiélago y es la protagonista de gran parte de la música folclórica canaria.",
-    "cierre": "Su sonido agudo y particular es casi imposible de confundir con cualquier otro instrumento.",
-    "hashtags": "#SabíasQueCanarias #Timple #MúsicaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "timple canario instrument",
-      "Canary Islands culture tradition"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL CARNAVAL DE SANTA CRUZ ES DE LOS MÁS FAMOSOS DEL MUNDO",
-    "isla": "Tenerife",
-    "texto": "Solo comparable en tamaño y colorido al de Río de Janeiro, el Carnaval de Santa Cruz de Tenerife reúne cada año a cientos de miles de personas en las calles.",
-    "cierre": "La elección de la Reina del Carnaval es uno de los eventos televisivos más esperados del año en la isla.",
-    "hashtags": "#SabíasQueCanarias #CarnavalTenerife #SantaCruzDeTenerife #DescubreCanarias",
-    "busquedas_imagen": [
-      "Carnival Santa Cruz de Tenerife",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "MASCA PARECE UN PUEBLO SACADO DE UN CUENTO",
-    "isla": "Tenerife",
-    "texto": "Este pequeño pueblo escondido entre montañas del Macizo de Teno estuvo prácticamente aislado del resto de la isla hasta que se construyó una carretera en los años 90.",
-    "cierre": "Su barranco es uno de los descensos de senderismo más famosos de Canarias.",
-    "hashtags": "#SabíasQueCanarias #Masca #Tenerife #Senderismo #DescubreCanarias",
-    "busquedas_imagen": [
-      "Masca village Tenerife",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LOS ÓRGANOS DE LA GOMERA SON UNA FORMACIÓN GEOLÓGICA ÚNICA",
-    "isla": "La Gomera",
-    "texto": "Estos acantilados de columnas de basalto, formados por la lava al enfriarse lentamente, recuerdan a los tubos de un órgano musical gigante.",
-    "cierre": "Solo se pueden ver bien desde el mar, en una ruta en barco desde Valle Gran Rey.",
-    "hashtags": "#SabíasQueCanarias #LaGomera #LosÓrganos #DescubreCanarias",
-    "busquedas_imagen": [
-      "Los Organos La Gomera cliffs",
-      "La Gomera Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LA ANAGA ES UNO DE LOS BOSQUES MÁS ANTIGUOS DE EUROPA",
-    "isla": "Tenerife",
-    "texto": "El Parque Rural de Anaga conserva restos de la laurisilva que cubría el Mediterráneo hace millones de años, antes de que el clima cambiara por completo.",
-    "cierre": "La UNESCO lo declaró Reserva de la Biosfera en 2015.",
-    "hashtags": "#SabíasQueCanarias #Anaga #Tenerife #DescubreCanarias",
-    "busquedas_imagen": [
-      "Anaga rural park Tenerife forest",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LA COCHINILLA TIÑÓ DE ROJO MEDIO MUNDO",
-    "isla": "Canarias",
-    "texto": "Durante el siglo XIX, Canarias vivió un auténtico boom económico gracias a este pequeño insecto que se cría sobre las tuneras y produce un tinte rojo carmín muy valorado.",
-    "cierre": "Todavía hoy se cultiva de forma artesanal en algunas zonas de Lanzarote.",
-    "hashtags": "#SabíasQueCanarias #Cochinilla #HistoriaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "cochineal cactus Lanzarote",
-      "Canary Islands culture tradition"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL FARO DE PUNTA DE TENO ES EL PUNTO MÁS OCCIDENTAL DE TENERIFE",
-    "isla": "Tenerife",
-    "texto": "Este faro marca el extremo más occidental de la isla, en un paisaje volcánico salvaje que fue de los últimos rincones de Tenerife en tener carretera.",
-    "cierre": "Desde aquí, en días claros, se puede ver perfectamente La Gomera.",
-    "hashtags": "#SabíasQueCanarias #PuntaDeTeno #Tenerife #DescubreCanarias",
-    "busquedas_imagen": [
-      "Punta de Teno lighthouse Tenerife",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "LOS ROQUES DE ANAGA TIENEN NOMBRE DE DIOSES GUANCHES",
-    "isla": "Tenerife",
-    "texto": "Algunos de los roques marinos que rodean el norte de Tenerife llevan nombres relacionados con la mitología de los antiguos guanches.",
-    "cierre": "Son un punto de referencia habitual para los pescadores desde hace siglos.",
-    "hashtags": "#SabíasQueCanarias #Anaga #Tenerife #DescubreCanarias",
-    "busquedas_imagen": [
-      "Roques de Anaga sea stacks",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "GRAN CANARIA ES CONOCIDA COMO UN 'CONTINENTE EN MINIATURA'",
+    "titulo": "EL ÚNICO CAFÉ CULTIVADO EN SUELO EUROPEO CRECE EN GRAN CANARIA",
     "isla": "Gran Canaria",
-    "texto": "Por la enorme variedad de microclimas y paisajes que reúne en poco espacio, desde dunas desérticas hasta bosques de pino, muchos la describen así.",
-    "cierre": "En menos de una hora en coche se puede pasar de la playa a la montaña nevada en invierno.",
-    "hashtags": "#SabíasQueCanarias #GranCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "Gran Canaria landscape mountains",
-      "Gran Canaria Canary Islands nature"
-    ],
-    "imagen_fija": null
+    "texto": "En el Valle de Agaete, la combinación de tres microclimas distintos (la humedad de los manantiales, la aridez del barranco y el viento marino) permite cultivar café de forma tradicional, algo que no ocurre en ningún otro punto de Europa.",
+    "cierre": "La producción es tan reducida que apenas sale de la isla.",
+    "hashtags": "#SabíasQueCanarias #GranCanaria #Agaete #DescubreCanarias",
+    "fuente": "HD Hotels / Denominación de origen Café de Agaete"
   },
   {
-    "titulo": "LA PALMA ES CONOCIDA COMO 'LA ISLA BONITA'",
-    "isla": "La Palma",
-    "texto": "Su intenso verdor, sus bosques de pino canario y sus paisajes volcánicos le han dado este sobrenombre desde hace generaciones.",
-    "cierre": "En 2021, el volcán de Cumbre Vieja recordó al mundo la naturaleza volcánica de toda la isla.",
-    "hashtags": "#SabíasQueCanarias #LaPalma #IslaBonita #DescubreCanarias",
-    "busquedas_imagen": [
-      "La Palma island green landscape",
-      "La Palma Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "FUERTEVENTURA TIENE LAS PLAYAS MÁS LARGAS DE CANARIAS",
-    "isla": "Fuerteventura",
-    "texto": "Con más de 150 kilómetros de costa de arena blanca y aguas turquesas, Fuerteventura reúne algunas de las playas más espectaculares de todo el Atlántico.",
-    "cierre": "Sus vientos constantes la han convertido en un referente mundial del windsurf y el kitesurf.",
-    "hashtags": "#SabíasQueCanarias #Fuerteventura #DescubreCanarias",
-    "busquedas_imagen": [
-      "Fuerteventura beach",
-      "Fuerteventura Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EL PARQUE NACIONAL DEL TEIDE ES PATRIMONIO DE LA HUMANIDAD",
-    "isla": "Tenerife",
-    "texto": "La UNESCO reconoció en 2007 el valor geológico único de este paisaje volcánico, considerado uno de los mejores ejemplos del mundo de evolución volcánica de una isla oceánica.",
-    "cierre": "Es el parque nacional más visitado de toda España.",
-    "hashtags": "#SabíasQueCanarias #ParqueNacionalDelTeide #Tenerife #DescubreCanarias",
-    "busquedas_imagen": [
-      "Teide National Park landscape",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
-  },
-  {
-    "titulo": "EN CANARIAS SE PUEDEN VER BALLENAS Y DELFINES TODO EL AÑO",
+    "titulo": "LAS SIETE CAPITALES CANARIAS MIRAN TODAS HACIA EL MISMO LADO",
     "isla": "Canarias",
-    "texto": "Las aguas cercanas a Tenerife y La Gomera albergan una población estable de cetáceos, entre ellos calderones tropicales, algo poco habitual en el mundo.",
-    "cierre": "Esto convierte al archipiélago en uno de los mejores lugares de Europa para el avistamiento responsable de cetáceos.",
-    "hashtags": "#SabíasQueCanarias #Ballenas #Delfines #DescubreCanarias",
-    "busquedas_imagen": [
-      "whale watching Tenerife ocean",
-      "Canary Islands culture tradition"
-    ],
-    "imagen_fija": null
+    "texto": "Las capitales de las siete islas principales están orientadas hacia el este. No es casualidad: los barcos de vela de los siglos pasados aprovechaban los vientos alisios, que soplan de noreste a suroeste, para zarpar con más facilidad desde esa orientación.",
+    "cierre": "La disposición de los puertos históricos condicionó, con el tiempo, el crecimiento de toda la ciudad.",
+    "hashtags": "#SabíasQueCanarias #IslasCanarias #DescubreCanarias",
+    "fuente": "Getholiday (recopilación histórica de urbanismo canario)"
   },
   {
-    "titulo": "LA VID DE LANZAROTE CRECE EN AGUJEROS DE CENIZA VOLCÁNICA",
+    "titulo": "EN GRAN CANARIA ESTÁ LA DESTILERÍA DE RON MÁS ANTIGUA DE EUROPA",
+    "isla": "Gran Canaria",
+    "texto": "En Arucas, al norte de la isla, la destilería Arehucas lleva produciendo ron desde hace más de 130 años, heredera de la tradición cañera que llegó a Canarias siglos atrás.",
+    "cierre": "Sigue siendo hoy la mayor fábrica de ron de todo el continente europeo.",
+    "hashtags": "#SabíasQueCanarias #GranCanaria #Arucas #DescubreCanarias",
+    "fuente": "Destilerías Arehucas / Cabildo de Gran Canaria"
+  },
+  {
+    "titulo": "LOS ÓRGANOS DE LA GOMERA SOLO SE VEN BIEN DESDE EL MAR",
+    "isla": "La Gomera",
+    "texto": "Estos acantilados de columnas de basalto, formados por la lava al enfriarse lentamente en contacto con el agua, recuerdan a los tubos de un órgano musical gigante. No hay ninguna carretera ni sendero que llegue hasta ellos por tierra.",
+    "cierre": "La única forma de contemplarlos de cerca es en barco, desde Valle Gran Rey.",
+    "hashtags": "#SabíasQueCanarias #LaGomera #LosÓrganos #DescubreCanarias",
+    "fuente": "Parque Nacional de Garajonay / Cabildo de La Gomera"
+  },
+  {
+    "titulo": "GARAJONAY CONSERVA UN BOSQUE QUE CUBRÍA EUROPA HACE MILLONES DE AÑOS",
+    "isla": "La Gomera",
+    "texto": "El Parque Nacional de Garajonay protege uno de los últimos restos de laurisilva, el bosque subtropical que cubría el Mediterráneo y el norte de África antes de que las glaciaciones lo hicieran desaparecer casi por completo del resto del planeta.",
+    "cierre": "La UNESCO lo declaró Patrimonio de la Humanidad en 1986.",
+    "hashtags": "#SabíasQueCanarias #LaGomera #Garajonay #DescubreCanarias",
+    "fuente": "UNESCO / Parque Nacional de Garajonay"
+  },
+  {
+    "titulo": "LA COCHINILLA CONVIRTIÓ A CANARIAS EN UNA POTENCIA DEL COLOR ROJO",
+    "isla": "Canarias",
+    "texto": "Durante el siglo XIX, el archipiélago vivió una auténtica fiebre económica gracias a un pequeño insecto que se cría sobre las tuneras. De su cuerpo se extrae un tinte carmín tan valorado que llegó a exportarse a media Europa antes de la invención de los colorantes sintéticos.",
+    "cierre": "Todavía hoy se recolecta de forma artesanal en algunos puntos de Lanzarote y La Palma.",
+    "hashtags": "#SabíasQueCanarias #Cochinilla #HistoriaCanaria #DescubreCanarias",
+    "fuente": "Museo de Historia y Antropología de Tenerife"
+  },
+  {
+    "titulo": "EL DRAGO MILENARIO DE ICOD NO TIENE ANILLOS PARA CONTAR SU EDAD",
+    "isla": "Tenerife",
+    "texto": "A diferencia de la mayoría de los árboles, el drago no genera anillos de crecimiento anuales, así que resulta imposible calcular su edad exacta con precisión. Las estimaciones científicas más citadas hablan de varios siglos de vida, aunque las cifras que circulan de forma popular varían mucho.",
+    "cierre": "Su savia, de color rojo intenso, hizo que los antiguos guanches lo consideraran un árbol sagrado.",
+    "hashtags": "#SabíasQueCanarias #Tenerife #DragoMilenario #DescubreCanarias",
+    "fuente": "Universidad de La Laguna / Ayuntamiento de Icod de los Vinos"
+  },
+  {
+    "titulo": "LA VID DE LANZAROTE CRECE EN AGUJEROS EXCAVADOS EN CENIZA VOLCÁNICA",
     "isla": "Lanzarote",
-    "texto": "En la comarca de La Geria, cada parra se planta en un hoyo excavado en la ceniza volcánica, protegida por un pequeño muro de piedra para retener la humedad.",
-    "cierre": "Este método único de cultivo produce el famoso vino de Malvasía volcánico.",
+    "texto": "En la comarca de La Geria, cada parra se planta en un hoyo cavado a mano en el picón (ceniza volcánica), protegido por un pequeño muro de piedra en forma de media luna que la resguarda del viento y retiene la escasa humedad nocturna.",
+    "cierre": "Este método, único en el mundo, surgió tras las erupciones del siglo XVIII que sepultaron media isla.",
     "hashtags": "#SabíasQueCanarias #Lanzarote #LaGeria #VinoCanario #DescubreCanarias",
-    "busquedas_imagen": [
-      "La Geria vineyards Lanzarote",
-      "Lanzarote Canary Islands nature"
-    ],
-    "imagen_fija": null
+    "fuente": "Denominación de Origen Vinos de Lanzarote / Cabildo de Lanzarote"
   },
   {
-    "titulo": "LOS ARCHIVOS MÁS ANTIGUOS DE CANARIAS SE ESCRIBIERON EN GUANCHE",
-    "isla": "Canarias",
-    "texto": "Antes de la conquista castellana en el siglo XV, los habitantes originarios de las islas tenían su propia lengua, de la que hoy solo se conservan algunas palabras y topónimos.",
-    "cierre": "Muchos nombres de lugares actuales, como Tacoronte o Guímar, tienen origen guanche.",
-    "hashtags": "#SabíasQueCanarias #Guanches #HistoriaCanaria #DescubreCanarias",
-    "busquedas_imagen": [
-      "guanche history Canary Islands",
-      "Canary Islands culture tradition"
-    ],
-    "imagen_fija": null
+    "titulo": "TIMANFAYA SIGUE HIRVIENDO BAJO TIERRA DESDE HACE CASI 300 AÑOS",
+    "isla": "Lanzarote",
+    "texto": "Las erupciones que formaron este paisaje lunar duraron de 1730 a 1736 y sepultaron varios pueblos enteros. A solo unos centímetros de profundidad, la temperatura del suelo todavía supera hoy los 100°C en algunos puntos del parque.",
+    "cierre": "Los guías del parque lo demuestran a los visitantes echando agua en un simple agujero, que sale disparada en forma de vapor al instante.",
+    "hashtags": "#SabíasQueCanarias #Lanzarote #Timanfaya #DescubreCanarias",
+    "fuente": "Parque Nacional de Timanfaya"
   },
   {
-    "titulo": "EL LORO PARQUE NACIÓ COMO UN PEQUEÑO PARQUE DE 13 LOROS",
+    "titulo": "EL SILBO GOMERO SE ENSEÑA EN LOS COLEGIOS POR LEY",
+    "isla": "La Gomera",
+    "texto": "Este lenguaje silbado, capaz de transmitir mensajes complejos a través de los profundos barrancos de la isla, estuvo a punto de desaparecer con la llegada del teléfono. Hoy es asignatura obligatoria en los colegios de La Gomera para garantizar que las nuevas generaciones lo mantengan vivo.",
+    "cierre": "En 2009 la UNESCO lo declaró Patrimonio Cultural Inmaterial de la Humanidad.",
+    "hashtags": "#SabíasQueCanarias #LaGomera #SilboGomero #DescubreCanarias",
+    "fuente": "UNESCO / Cabildo de La Gomera"
+  },
+  {
+    "titulo": "LAS DUNAS DE MASPALOMAS CAMBIAN DE FORMA CADA AÑO",
+    "isla": "Gran Canaria",
+    "texto": "El viento va desplazando grano a grano esta reserva natural, de forma que su paisaje nunca es exactamente igual de un año a otro. En su interior se esconde un oasis con palmeras y una charca donde anidan aves migratorias procedentes de África y Europa.",
+    "cierre": "Es una de las pocas formaciones de dunas vivas de origen marino de toda Europa.",
+    "hashtags": "#SabíasQueCanarias #GranCanaria #Maspalomas #DescubreCanarias",
+    "fuente": "Reserva Natural Especial de las Dunas de Maspalomas"
+  },
+  {
+    "titulo": "EL ROQUE NUBLO FUE UN TEMPLO AL AIRE LIBRE PARA LOS ANTIGUOS CANARIOS",
+    "isla": "Gran Canaria",
+    "texto": "Este monolito volcánico de 80 metros de altura era, según los estudios arqueológicos, un lugar de culto donde los antiguos habitantes de Gran Canaria realizaban ceremonias religiosas dedicadas a sus divinidades.",
+    "cierre": "En días muy despejados, desde su base se puede llegar a ver el Teide, a más de 60 kilómetros de distancia.",
+    "hashtags": "#SabíasQueCanarias #GranCanaria #RoqueNublo #DescubreCanarias",
+    "fuente": "Cabildo de Gran Canaria / Museo Canario"
+  },
+  {
+    "titulo": "EL HIERRO INTENTA SER LA PRIMERA ISLA DEL MUNDO 100% AUTOSUFICIENTE EN ENERGÍA",
+    "isla": "El Hierro",
+    "texto": "Desde 2014 funciona en la isla una central hidroeólica que combina un parque eólico con un embalse de bombeo: cuando sobra viento, bombea agua a un depósito elevado, y cuando falta, la deja caer para generar electricidad. El objetivo es cubrir todo el consumo de la isla sin combustibles fósiles.",
+    "cierre": "En los mejores momentos del año, la isla llega a funcionar varios días seguidos únicamente con energías renovables.",
+    "hashtags": "#SabíasQueCanarias #ElHierro #EnergíaRenovable #DescubreCanarias",
+    "fuente": "Gorona del Viento El Hierro, S.A. (central hidroeólica oficial)"
+  },
+  {
+    "titulo": "EL LORO PARQUE EMPEZÓ CON SOLO 13 LOROS",
     "isla": "Tenerife",
-    "texto": "Fundado en 1972 en Puerto de la Cruz, este parque comenzó con una modesta colección de loros y hoy es uno de los zoológicos más reconocidos de Europa.",
-    "cierre": "Alberga una de las mayores colecciones de loros del mundo en su hábitat natural recreado.",
+    "texto": "Cuando abrió sus puertas en 1972 en Puerto de la Cruz, este parque no era más que un pequeño jardín con una modesta colección de 13 loros. Décadas después, se convirtió en uno de los zoológicos más visitados y reconocidos de Europa.",
+    "cierre": "Hoy alberga una de las colecciones de loros más completas del mundo, además de programas de conservación de especies en peligro.",
     "hashtags": "#SabíasQueCanarias #LoroParque #Tenerife #DescubreCanarias",
-    "busquedas_imagen": [
-      "Loro Parque Tenerife",
-      "Tenerife Canary Islands nature"
-    ],
-    "imagen_fija": null
+    "fuente": "Loro Parque Fundación"
+  },
+  {
+    "titulo": "EN AGUAS DE TENERIFE Y LA GOMERA VIVEN BALLENAS TODO EL AÑO",
+    "isla": "Canarias",
+    "texto": "A diferencia de la mayoría de zonas del planeta donde los cetáceos solo pasan de forma migratoria, el canal entre Tenerife y La Gomera alberga una población estable de calderones tropicales durante los doce meses del año, algo muy poco habitual a nivel mundial.",
+    "cierre": "En total se han identificado unas 30 especies distintas de cetáceos en aguas canarias, la mayor diversidad de toda Europa.",
+    "hashtags": "#SabíasQueCanarias #Ballenas #Cetáceos #DescubreCanarias",
+    "fuente": "Canarias7 / Estudios de la Universidad de La Laguna sobre cetáceos"
   }
 ]
