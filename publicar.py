@@ -18,6 +18,7 @@ import os
 import json
 import random
 import sys
+import time
 from datetime import date
 
 import requests
@@ -77,6 +78,28 @@ def construir_texto(curiosidad):
     )
 
 
+def esperar_a_que_la_imagen_este_lista(creation_id, access_token, intentos=12, espera_segundos=5):
+    """Instagram tarda unos segundos en descargar y procesar la imagen antes de
+    poder publicarla. Aquí preguntamos varias veces, con pausas, hasta que
+    confirme que está lista (status_code = FINISHED)."""
+    for intento in range(1, intentos + 1):
+        resp = requests.get(
+            f"{GRAPH_URL}/{creation_id}",
+            params={"fields": "status_code", "access_token": access_token},
+            timeout=20,
+        )
+        if resp.ok:
+            estado = resp.json().get("status_code")
+            print(f"⏳ Comprobando estado de la imagen (intento {intento}/{intentos}): {estado}")
+            if estado == "FINISHED":
+                return True
+            if estado == "ERROR":
+                sys.exit(f"❌ Instagram no pudo procesar la imagen: {resp.text}")
+        time.sleep(espera_segundos)
+
+    sys.exit("❌ La imagen no estuvo lista a tiempo. Instagram tardó demasiado en procesarla.")
+
+
 def publicar_en_instagram(ig_user_id, access_token, url_imagen, texto):
     # Paso 1: crear el contenedor de la publicación
     resp_crear = requests.post(
@@ -93,7 +116,10 @@ def publicar_en_instagram(ig_user_id, access_token, url_imagen, texto):
 
     creation_id = resp_crear.json()["id"]
 
-    # Paso 2: publicar el contenedor creado
+    # Paso 2: esperar a que Instagram termine de procesar la imagen
+    esperar_a_que_la_imagen_este_lista(creation_id, access_token)
+
+    # Paso 3: publicar el contenedor creado
     resp_publicar = requests.post(
         f"{GRAPH_URL}/{ig_user_id}/media_publish",
         data={
