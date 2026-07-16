@@ -47,25 +47,25 @@ def elegir_curiosidad_de_hoy(curiosidades):
     return curiosidades[indice]
 
 
-def buscar_imagen(pexels_api_key, busqueda):
-    headers = {"Authorization": pexels_api_key}
-    params = {"query": busqueda, "per_page": 6, "orientation": "square"}
-    resp = requests.get("https://api.pexels.com/v1/search", headers=headers, params=params, timeout=20)
-    resp.raise_for_status()
-    fotos = resp.json().get("photos", [])
+def buscar_imagen(pexels_api_key, curiosidad):
+    # Si has fijado una foto concreta para esta curiosidad, se usa esa siempre
+    if curiosidad.get("imagen_fija"):
+        return curiosidad["imagen_fija"]
 
-    if not fotos:
-        # Si no encuentra nada específico, usa una búsqueda genérica de respaldo
-        params["query"] = "canary islands landscape"
+    headers = {"Authorization": pexels_api_key}
+    intentos_busqueda = curiosidad["busquedas_imagen"] + ["Canary Islands nature landscape"]
+
+    for busqueda in intentos_busqueda:
+        params = {"query": busqueda, "per_page": 8, "orientation": "square"}
         resp = requests.get("https://api.pexels.com/v1/search", headers=headers, params=params, timeout=20)
         resp.raise_for_status()
         fotos = resp.json().get("photos", [])
+        if fotos:
+            print(f"🔎 Búsqueda usada: '{busqueda}' ({len(fotos)} resultados)")
+            foto_elegida = random.choice(fotos)
+            return foto_elegida["src"]["large"]
 
-    if not fotos:
-        sys.exit("❌ No se ha encontrado ninguna imagen en Pexels, ni siquiera con la búsqueda de respaldo.")
-
-    foto_elegida = random.choice(fotos)
-    return foto_elegida["src"]["large"]
+    sys.exit("❌ No se ha encontrado ninguna imagen en Pexels, ni siquiera con la búsqueda de respaldo.")
 
 
 def construir_texto(curiosidad):
@@ -143,7 +143,7 @@ def main():
     curiosidad = elegir_curiosidad_de_hoy(curiosidades)
     print(f"📌 Curiosidad de hoy: {curiosidad['titulo']}")
 
-    url_imagen = buscar_imagen(pexels_api_key, curiosidad["busqueda_imagen"])
+    url_imagen = buscar_imagen(pexels_api_key, curiosidad)
     print(f"🖼️  Imagen encontrada: {url_imagen}")
 
     texto = construir_texto(curiosidad)
