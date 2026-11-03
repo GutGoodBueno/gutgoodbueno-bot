@@ -1,0 +1,44 @@
+{
+  "_instrucciones": "Próximas actividades de gutgoodbueno.com. Cada actividad se muestra en la web hasta el final del día de 'fecha_fin' (o de 'fecha' si no hay fecha_fin). El cartel va en web/carteles/. Orden automático por fecha.",
+  "eventos": [
+    {
+      "id": "2026-11-22-ruta-castanas",
+      "tipo": "Excursión guiada",
+      "titulo": "Ruta de las Castañas",
+      "subtitulo": "Vive el otoño en Tenerife",
+      "fecha": "2026-11-22",
+      "dia": "Domingo 22 de noviembre",
+      "hora": "",
+      "lugar": "",
+      "precio": "18 €",
+      "incluye": "Guía oficial, seguro de accidentes y de responsabilidad civil",
+      "cartel": "carteles/2026-11-22-ruta-castanas.jpg"
+    },
+    {
+      "id": "2026-11-26-charla-misterio-ritos",
+      "tipo": "Charla del Misterio",
+      "titulo": "Ritos llegados hasta nuestro tiempo",
+      "subtitulo": "Tradiciones, símbolos y ceremonias que siguen vivas",
+      "fecha": "2026-11-26",
+      "dia": "Jueves 26 de noviembre",
+      "hora": "20:00 – 21:30",
+      "lugar": "Espacio Moona, Museo de la Naturaleza y Arqueología (MUNA), Santa Cruz",
+      "precio": "14 €",
+      "incluye": "Charla, bebida y tapa",
+      "cartel": "carteles/2026-11-26-charla-misterio-ritos.jpg"
+    },
+    {
+      "id": "2026-12-02-ruta-santa-cruz-emblematica",
+      "tipo": "Ruta guiada · Muestra Atlántica de Cine Social",
+      "titulo": "Santa Cruz emblemática",
+      "subtitulo": "Los edificios que cuentan la ciudad",
+      "fecha": "2026-12-02",
+      "dia": "Miércoles 2 de diciembre",
+      "hora": "20:00",
+      "lugar": "Plaza de España, junto a las letras de «Santa Cruz»",
+      "precio": "15 €",
+      "incluye": "Guía: Carlos Jesús Pérez Simancas",
+      "cartel": "carteles/2026-12-02-ruta-santa-cruz-emblematica.jpg"
+    }
+  ]
+}

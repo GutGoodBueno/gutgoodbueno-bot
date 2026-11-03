@@ -1,0 +1,73 @@
+<div id="ggb-proximas" class="ggb">
+  <div class="ggb-head">
+    <p class="ggb-kicker">Agenda</p>
+    <h2 class="ggb-title">Próximas actividades</h2>
+    <p class="ggb-lead">Rutas, charlas y excursiones con fecha. Plazas limitadas: reserva por WhatsApp.</p>
+  </div>
+  <div class="ggb-events" aria-live="polite"><p class="ggb-empty">Cargando agenda…</p></div>
+</div>
+<style>
+.ggb{--ggb-bg:#0f0f12;--ggb-card:#18181d;--ggb-line:rgba(255,255,255,.12);--ggb-text:#f4f1ec;--ggb-mute:#b9b4ac;--ggb-accent:#e2a03f;font-family:Inter,system-ui,sans-serif;color:var(--ggb-text);max-width:1100px;margin:0 auto;padding:8px 4px;text-align:left}
+.ggb *{box-sizing:border-box}
+.ggb-head{text-align:center;margin-bottom:28px}
+.ggb-kicker{letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--ggb-accent);margin:0 0 8px}
+.ggb-title{font-family:"Dela Gothic One",Inter,sans-serif;font-weight:400;font-size:clamp(26px,4vw,38px);letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px;color:#fff}
+.ggb-lead{color:var(--ggb-mute);font-size:15px;line-height:1.5;margin:0 auto;max-width:560px}
+.ggb-events{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.ggb-ev{background:var(--ggb-card);border:1px solid var(--ggb-line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.ggb-ev-poster{display:block;position:relative;aspect-ratio:3/4;background:#000}
+.ggb-ev-poster img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.ggb-date{position:absolute;top:12px;left:12px;background:var(--ggb-accent);color:#141414;border-radius:10px;padding:6px 10px;text-align:center;line-height:1;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.ggb-date b{display:block;font-size:22px}
+.ggb-date span{font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.ggb-ev-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ggb-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ggb-accent);margin:0}
+.ggb-ev h3{margin:0;font-size:19px;line-height:1.25;color:#fff;font-weight:700}
+.ggb-sub{margin:0;color:var(--ggb-mute);font-size:14px;line-height:1.45}
+.ggb-meta{list-style:none;margin:4px 0 0;padding:0;font-size:13.5px;line-height:1.5;color:var(--ggb-text)}
+.ggb-meta li{padding-left:18px;position:relative}
+.ggb-meta li:before{content:"·";position:absolute;left:6px;color:var(--ggb-accent);font-weight:700}
+.ggb-foot{margin-top:auto;padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ggb-price{font-size:20px;font-weight:700;color:#fff}
+.ggb-btn{display:inline-block;background:var(--ggb-accent);color:#141414!important;text-decoration:none!important;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:11px 16px;border-radius:999px;transition:transform .15s,background .15s}
+.ggb-btn:hover{transform:translateY(-1px);background:#f0b55a}
+.ggb-empty{grid-column:1/-1;text-align:center;color:var(--ggb-mute);font-size:15px}
+</style>
+<script>
+(function(){
+  var BASE='https://raw.githubusercontent.com/GutGoodBueno/gutgoodbueno-bot/main/web/';
+  var WA='https://wa.me/34659947793?text=';
+  var root=document.querySelector('#ggb-proximas .ggb-events');
+  if(!root)return;
+  var MESES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  function hoy(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  fetch(BASE+'eventos.json?h='+Math.floor(Date.now()/36e5)).then(function(r){return r.json();}).then(function(data){
+    var t=hoy();
+    var ev=(data.eventos||[]).filter(function(e){return (e.fecha_fin||e.fecha)>=t;}).sort(function(a,b){return a.fecha<b.fecha?-1:1;});
+    if(!ev.length){root.innerHTML='<p class="ggb-empty">Estamos preparando nuevas fechas. Síguenos en Instagram o escríbenos por WhatsApp para enterarte antes que nadie.</p>';return;}
+    root.innerHTML=ev.map(function(e){
+      var p=e.fecha.split('-');
+      var img=BASE+e.cartel;
+      var msg=encodeURIComponent('Hola, quiero reservar: '+e.titulo+' ('+e.dia+')');
+      var meta='';
+      if(e.dia)meta+='<li>'+esc(e.dia)+(e.hora?', '+esc(e.hora):'')+'</li>';
+      if(e.lugar)meta+='<li>'+esc(e.lugar)+'</li>';
+      if(e.incluye)meta+='<li>'+esc(e.incluye)+'</li>';
+      return '<article class="ggb-ev">'+
+        '<a class="ggb-ev-poster" href="'+img+'" target="_blank" rel="noopener" aria-label="Ver cartel de '+esc(e.titulo)+'">'+
+          '<img src="'+img+'" alt="Cartel: '+esc(e.titulo)+'" loading="lazy">'+
+          '<div class="ggb-date"><b>'+parseInt(p[2],10)+'</b><span>'+MESES[parseInt(p[1],10)-1]+'</span></div>'+
+        '</a>'+
+        '<div class="ggb-ev-body">'+
+          '<p class="ggb-tag">'+esc(e.tipo)+'</p>'+
+          '<h3>'+esc(e.titulo)+'</h3>'+
+          (e.subtitulo?'<p class="ggb-sub">'+esc(e.subtitulo)+'</p>':'')+
+          '<ul class="ggb-meta">'+meta+'</ul>'+
+          '<div class="ggb-foot"><span class="ggb-price">'+esc(e.precio)+'</span>'+
+          '<a class="ggb-btn" href="'+WA+msg+'" target="_blank" rel="noopener">Reservar</a></div>'+
+        '</div></article>';
+    }).join('');
+  }).catch(function(){root.innerHTML='<p class="ggb-empty">No hemos podido cargar la agenda. Escríbenos por WhatsApp al 659 947 793.</p>';});
+})();
+</script>
