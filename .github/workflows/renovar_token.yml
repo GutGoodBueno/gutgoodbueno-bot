@@ -3,6 +3,7 @@ name: Renovar token de Instagram
 # El token de Instagram caduca a los 60 días. Este proceso lo renueva
 # los días 1 y 15 de cada mes y guarda el nuevo en el Secret
 # INSTAGRAM_ACCESS_TOKEN. Necesita el Secret GH_PAT (ver instrucciones).
+# Instagram solo deja renovar tokens con más de 24 horas de antigüedad.
 
 on:
   schedule:
@@ -13,11 +14,15 @@ jobs:
   renovar:
     runs-on: ubuntu-latest
     steps:
-      - name: Pedir a Instagram un token renovado
-        id: renovar
+      - name: Renovar el token y guardarlo en los Secrets
         env:
           TOKEN_ACTUAL: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "❌ Falta el Secret GH_PAT. Sin él no se puede guardar el token renovado."
+            exit 1
+          fi
           respuesta=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${TOKEN_ACTUAL}")
           nuevo=$(echo "$respuesta" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
           if [ -z "$nuevo" ]; then
@@ -27,12 +32,6 @@ jobs:
             exit 1
           fi
           echo "::add-mask::$nuevo"
-          echo "nuevo=$nuevo" >> "$GITHUB_OUTPUT"
           dias=$(echo "$respuesta" | python3 -c "import sys,json; print(int(json.load(sys.stdin).get('expires_in',0))//86400)")
-          echo "✅ Token renovado. Válido durante unos $dias días."
-
-      - name: Guardar el token nuevo en los Secrets
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-          NUEVO: ${{ steps.renovar.outputs.nuevo }}
-        run: gh secret set INSTAGRAM_ACCESS_TOKEN --body "$NUEVO" --repo "$GITHUB_REPOSITORY"
+          printf '%s' "$nuevo" | gh secret set INSTAGRAM_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "✅ Token renovado y guardado. Válido durante unos $dias días."
