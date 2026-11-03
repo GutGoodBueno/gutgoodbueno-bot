@@ -45,7 +45,19 @@
     '.ggb-btn.is-line:hover{background:rgba(226,160,63,.12)}' +
     '.ggb-private{margin-top:22px;border:1px solid var(--ggb-line);border-radius:14px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:linear-gradient(90deg,rgba(226,160,63,.14),rgba(226,160,63,0))}' +
     '.ggb-private b{display:block;color:#fff;font-size:16px;margin-bottom:4px}.ggb-private span{color:var(--ggb-mute);font-size:14px}' +
-    '.ggb-empty{grid-column:1/-1;text-align:center;color:var(--ggb-mute);font-size:15px;margin:0}';
+    '.ggb-empty{grid-column:1/-1;text-align:center;color:var(--ggb-mute);font-size:15px;margin:0}' +
+    /* Carrusel cuando el hueco es estrecho (columna de Carrd o móvil) */
+    '.ggb.is-narrow .ggb-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:4px 2px 12px;margin:0 -4px;scrollbar-width:thin;scrollbar-color:rgba(226,160,63,.6) transparent;-webkit-overflow-scrolling:touch}' +
+    '.ggb.is-narrow .ggb-grid::-webkit-scrollbar{height:6px}.ggb.is-narrow .ggb-grid::-webkit-scrollbar-thumb{background:rgba(226,160,63,.6);border-radius:3px}' +
+    '.ggb.is-narrow .ggb-card{flex:0 0 84%;scroll-snap-align:start}' +
+    '.ggb.is-narrow .ggb-card:hover{transform:none}' +
+    '.ggb.is-narrow .ggb-media.is-poster{aspect-ratio:4/5}' +
+    '.ggb-hint{display:none;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ggb-mute);margin:10px 0 0}' +
+    '.ggb.is-narrow.has-more .ggb-hint{display:block}' +
+    '.ggb-nav{display:none;justify-content:center;gap:10px;margin-top:10px}' +
+    '.ggb.is-narrow.has-more .ggb-nav{display:flex}' +
+    '.ggb-nav button{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--ggb-accent);background:transparent;color:var(--ggb-accent);font-size:18px;line-height:1;cursor:pointer}' +
+    '.ggb-nav button:hover{background:rgba(226,160,63,.15)}';
 
   function addCss() {
     if (document.getElementById('ggb-web-css')) return;
@@ -106,6 +118,7 @@
           '<div class="ggb-foot"><span class="ggb-price">' + esc(e.precio) + '</span>' +
           '<a class="ggb-btn" href="' + WA + msg + '" target="_blank" rel="noopener">Reservar</a></div></div></article>';
       }).join('');
+      responsive(el);
     }).catch(function () {
       grid.innerHTML = '<p class="ggb-empty">No hemos podido cargar la agenda. Escríbenos por WhatsApp al 659 947 793.</p>';
     });
@@ -133,9 +146,33 @@
           '<a class="ggb-btn is-line" href="' + esc(pv.enlace) + '" target="_blank" rel="noopener">' + esc(pv.boton) + '</a>';
         el.appendChild(box);
       }
+      responsive(el);
     }).catch(function () {
       grid.innerHTML = '<p class="ggb-empty">Consulta nuestras rutas en GetYourGuide o escríbenos por WhatsApp al 659 947 793.</p>';
     });
+  }
+
+  /* Ajusta a carrusel si el bloque es estrecho y añade flechas */
+  function responsive(el) {
+    var grid = el.querySelector('.ggb-grid');
+    if (!grid) return;
+    if (!el.querySelector('.ggb-nav')) {
+      var nav = document.createElement('div');
+      nav.className = 'ggb-nav';
+      nav.innerHTML = '<button type="button" aria-label="Anterior">&#8592;</button><button type="button" aria-label="Siguiente">&#8594;</button>';
+      var b = nav.querySelectorAll('button');
+      b[0].onclick = function () { grid.scrollBy({ left: -grid.clientWidth * 0.85, behavior: 'smooth' }); };
+      b[1].onclick = function () { grid.scrollBy({ left: grid.clientWidth * 0.85, behavior: 'smooth' }); };
+      grid.parentNode.insertBefore(nav, grid.nextSibling);
+    }
+    function check() {
+      var narrow = el.clientWidth < 700;
+      el.classList.toggle('is-narrow', narrow);
+      el.classList.toggle('has-more', grid.querySelectorAll('.ggb-card').length > 1);
+    }
+    check();
+    if (window.ResizeObserver) new ResizeObserver(check).observe(el);
+    else window.addEventListener('resize', check);
   }
 
   function init() {
