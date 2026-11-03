@@ -281,6 +281,13 @@ def publicar_en_instagram(ig_user_id, token, url_imagen, texto):
 
 
 def main():
+    # Una publicación al día: la ejecución programada no repite si ya se publicó hoy
+    # (un lanzamiento manual sí publica, por si se quiere recuperar un día).
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and os.environ.get("SOLO_IMAGEN") != "1":
+        estado = leer_json(ARCHIVO_ESTADO, {})
+        if estado.get("fecha") == date.today().isoformat():
+            print("⏸️ Ya se publicó un municipio hoy. Mañana sigue la serie.")
+            return
     municipios = leer_json(ARCHIVO_MUNICIPIOS)
     geo = leer_json(ARCHIVO_GEO)
     m = municipio_de_hoy(municipios)
