@@ -1,0 +1,59 @@
+{
+  "_instrucciones": "Tarjetas de productos de gutgoodbueno.com (sección Rutas y experiencias). Orden = orden en la web.",
+  "experiencias": [
+    {
+      "etiqueta": "Ruta guiada",
+      "titulo": "Crónica negra de Santa Cruz",
+      "texto": "Crímenes reales al anochecer: del rey Jaja de Opobo al Carnaval del miedo de 1991, contados donde ocurrieron.",
+      "datos": "2 h · Viernes y sábados, 20:00 · Mercado de África",
+      "precio": "22 €",
+      "precio_prefijo": "desde",
+      "imagen": "https://cdn.getyourguide.com/img/tour/b59f132b83632b8f86b15816863791102881ee1ffd491a3aa373a52184bb026a.jpg/145.jpg",
+      "alt": "Grupo escuchando al guía de noche en Santa Cruz",
+      "boton": "Reservar",
+      "enlace": "https://gyg.me/MzopfXq0"
+    },
+    {
+      "etiqueta": "Ruta guiada",
+      "titulo": "La Laguna: historia, leyendas y Amaro Pargo",
+      "texto": "La ciudad Patrimonio de la Humanidad, sus leyendas y el corsario Amaro Pargo. Terminamos probando el lagunero.",
+      "datos": "2 h · Sábados, 11:00 · Plaza de la Junta Suprema",
+      "precio": "22 €",
+      "precio_prefijo": "desde",
+      "imagen": "https://cdn.getyourguide.com/img/tour/1e7db2e605d659a6d929d7ac4eeec3e31f3a793dcee5bb609e85c6d386e058f7.jpg/145.jpg",
+      "alt": "Calles del casco histórico de La Laguna",
+      "boton": "Reservar",
+      "enlace": "https://gyg.me/j8iyijKL"
+    },
+    {
+      "etiqueta": "Ruta guiada",
+      "titulo": "Santa Cruz masónica",
+      "texto": "Aprende a leer los símbolos escondidos en plazas, edificios y el parque García Sanabria, hasta el Templo Masónico.",
+      "datos": "2 h · Fines de semana, 18:00 · Plaza Weyler",
+      "precio": "22 €",
+      "precio_prefijo": "desde",
+      "imagen": "https://cdn.getyourguide.com/img/tour/57c08f4ec08ade476a0c4cdf4b1a83d3721b99c839bcf6d223e895f08375988a.jpeg/145.jpg",
+      "alt": "Símbolos masónicos en Santa Cruz de Tenerife",
+      "boton": "Reservar",
+      "enlace": "https://gyg.me/Qlb65uUu"
+    },
+    {
+      "etiqueta": "Audiotour · a tu aire",
+      "titulo": "True crime in Santa Cruz",
+      "texto": "Audiotour en el móvil: el GPS reproduce cada historia al llegar. Cuando quieras, sin horarios. En inglés; versión en español muy pronto.",
+      "datos": "2 km · unos 30 min · App VoiceMap",
+      "precio": "VoiceMap",
+      "precio_prefijo": "en",
+      "imagen": "https://media.voicemap.me/public/routes/images/000/017/433/original/LETRAS_SANTA_CRUZ_1791922226_1792483154.jpeg",
+      "alt": "Letras de Santa Cruz en la plaza de España",
+      "boton": "Ver tour",
+      "enlace": "https://voicemap.me/tour/santa-cruz-de-tenerife/behind-elegant-squares-true-crime-in-santa-cruz-de-tenerife"
+    }
+  ],
+  "privado": {
+    "titulo": "¿Grupo privado, empresa u hotel?",
+    "texto": "Hacemos cualquiera de las rutas en exclusiva para tu grupo, en español o inglés.",
+    "boton": "Pedir precio",
+    "enlace": "https://wa.me/34659947793?text=Hola%2C%20quiero%20precio%20para%20una%20ruta%20privada"
+  }
+}
