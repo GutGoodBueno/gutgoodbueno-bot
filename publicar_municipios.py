@@ -25,7 +25,7 @@ import os
 import subprocess
 import sys
 import time
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
@@ -77,7 +77,9 @@ def municipio_de_hoy(municipios):
 
 def guardar_estado(n):
     with open(ARCHIVO_ESTADO, "w", encoding="utf-8") as f:
-        json.dump({"ultimo_publicado": n, "fecha": date.today().isoformat()}, f, ensure_ascii=False, indent=1)
+        json.dump({"ultimo_publicado": n, "fecha": date.today().isoformat(),
+                   "fecha_hora": datetime.now(timezone.utc).isoformat(timespec="seconds")},
+                  f, ensure_ascii=False, indent=1)
 
 
 # ---------- Imagen ----------
@@ -281,13 +283,17 @@ def publicar_en_instagram(ig_user_id, token, url_imagen, texto):
 
 
 def main():
-    # Una publicación al día: la ejecución programada no repite si ya se publicó hoy
-    # (un lanzamiento manual sí publica, por si se quiere recuperar un día).
+    # Una publicación al día: la ejecución programada no repite si hubo otra publicación
+    # hace menos de 12 horas (un lanzamiento manual sí publica, por si se quiere recuperar un día).
+    # Se mira la hora exacta y no la fecha porque GitHub retrasa a veces el cron varias horas:
+    # una ejecución que cae pasada la medianoche UTC "ocupaba" el día siguiente y lo saltaba.
     if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and os.environ.get("SOLO_IMAGEN") != "1":
         estado = leer_json(ARCHIVO_ESTADO, {})
-        if estado.get("fecha") == date.today().isoformat():
-            print("⏸️ Ya se publicó un municipio hoy. Mañana sigue la serie.")
-            return
+        if estado.get("fecha_hora"):
+            ultima = datetime.fromisoformat(estado["fecha_hora"])
+            if datetime.now(timezone.utc) - ultima < timedelta(hours=12):
+                print(f"⏸️ Ya se publicó un municipio hace menos de 12 horas ({estado['fecha_hora']}). Mañana sigue la serie.")
+                return
     municipios = leer_json(ARCHIVO_MUNICIPIOS)
     geo = leer_json(ARCHIVO_GEO)
     m = municipio_de_hoy(municipios)
