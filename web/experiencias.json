@@ -16,7 +16,7 @@
     {
       "etiqueta": "Ruta guiada",
       "titulo": "La Laguna: historia, leyendas y Amaro Pargo",
-      "texto": "La ciudad Patrimonio de la Humanidad, sus leyendas y el corsario Amaro Pargo. Terminamos probando el lagunero.",
+      "texto": "La ciudad Patrimonio de la Humanidad, sus leyendas y el corsario Amaro Pargo, con nuestro guía oficial Carlos.",
       "datos": "2 h · Sábados, 11:00 · Plaza de la Junta Suprema",
       "precio": "22 €",
       "precio_prefijo": "desde",
@@ -39,15 +39,27 @@
     },
     {
       "etiqueta": "Audiotour · a tu aire",
-      "titulo": "True crime in Santa Cruz",
+      "titulo": "True crime en Santa Cruz",
       "texto": "Audiotour en el móvil: el GPS reproduce cada historia al llegar. Cuando quieras, sin horarios. En inglés; versión en español muy pronto.",
-      "datos": "2 km · unos 30 min · App VoiceMap",
+      "datos": "1,6 km · unos 30 min · App VoiceMap",
       "precio": "VoiceMap",
       "precio_prefijo": "en",
       "imagen": "https://media.voicemap.me/public/routes/images/000/017/433/original/LETRAS_SANTA_CRUZ_1791922226_1792483154.jpeg",
       "alt": "Letras de Santa Cruz en la plaza de España",
       "boton": "Ver tour",
-      "enlace": "https://voicemap.me/tour/santa-cruz-de-tenerife/behind-elegant-squares-true-crime-in-santa-cruz-de-tenerife"
+      "enlace": "https://voicemap.me/tour/tenerife/behind-elegant-squares-true-crime-in-santa-cruz-de-tenerife"
+    },
+    {
+      "etiqueta": "Audiotour · a tu aire",
+      "titulo": "Corsarios, monjas y fantasmas en La Laguna",
+      "texto": "Audiotour en el móvil por el casco histórico: Amaro Pargo, la monja incorrupta y las leyendas de la ciudad. Cuando quieras, sin horarios. En inglés.",
+      "datos": "1,5 km · unos 30 min · App VoiceMap",
+      "precio": "VoiceMap",
+      "precio_prefijo": "en",
+      "imagen": "https://media.voicemap.me/public/routes/images/000/018/513/original/cover-la-laguna_1794342584.jpg",
+      "alt": "Casco histórico de La Laguna",
+      "boton": "Ver tour",
+      "enlace": "https://voicemap.me/tour/tenerife/corsairs-nuns-and-ghosts-a-la-laguna-walking-tour"
     }
   ],
   "privado": {
